@@ -71,6 +71,25 @@
     font-weight: 600 !important;
   }
 
+  /* 20TH ANNIVERSARY BANNER */
+  .anniv-banner {
+    width: 100%;
+    line-height: 0;
+    background: #0066cc;
+  }
+  .anniv-banner a { display: block; width: 100%; }
+  .anniv-desktop { width: 100%; height: auto; display: block; }
+  .anniv-mobile  { width: 100%; height: auto; display: none; }
+
+  @media (min-width: 769px) {
+    .anniv-banner { margin-bottom: -80px; position: relative; z-index: 2; }
+  }
+
+  @media (max-width: 768px) {
+    .anniv-desktop { display: none; }
+    .anniv-mobile  { display: block; }
+  }
+
   /* CONTAINER */
   .container { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
 
@@ -80,6 +99,8 @@
     color: white;
     text-align: center;
     padding: 3rem 1.5rem;
+    position: relative;
+    z-index: 1;
   }
   .hero-badge {
     display: inline-block;
@@ -378,6 +399,14 @@
     <li><a href="#contact" class="nav-cta">Hubungi</a></li>
   </ul>
 </nav>
+
+<!-- 20TH ANNIVERSARY BANNER -->
+<section class="anniv-banner">
+  <a href="https://wa.me/60183721927?text=Tebus%20Promosi%20RM20%20Coway%202026." target="_blank" rel="noopener" aria-label="Coway 20th Anniversary Promosi">
+    <img src="images/coway-20th-rewards-big.jpg" class="anniv-desktop" alt="Coway 20 Extraordinary Rewards — Promosi Ulang Tahun 20" loading="eager" width="2600" height="1679" />
+    <img src="images/coway-20th-promo-big.jpg"   class="anniv-mobile"  alt="Coway 20 Extraordinary Rewards — Promosi RM20" loading="eager" width="800" height="1621" />
+  </a>
+</section>
 
 <!-- PROMO STRIP -->
 <div class="promo-strip">
