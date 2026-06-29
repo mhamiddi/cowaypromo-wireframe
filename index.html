@@ -3,549 +3,707 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Promosi Coway Terbaru | Diskaun 50%</title>
+<title>Promosi Coway Terbaru | Diskaun 50% | Ejen Sah Coway</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  /* WIREFRAME: Low-fidelity design system */
   :root {
-    --wf-bg: #f5f5f5;
-    --wf-white: #ffffff;
-    --wf-border: #d4d4d4;
-    --wf-dark: #2d2d2d;
-    --wf-mid: #6b6b6b;
-    --wf-light: #9e9e9e;
-    --wf-accent: #1a56db;
-    --wf-green: #059669;
+    --coway-navy: #002856;
+    --coway-blue: #0066b3;
+    --coway-light: #e8f4fd;
+    --coway-accent: #0099e6;
+    --coway-green: #00a859;
+    --coway-red: #e31837;
+    --text: #1a1a1a;
+    --text-light: #555;
+    --white: #ffffff;
+    --border: #e0e0e0;
+    --radius: 12px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
   }
-  
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  
+
   body {
-    font-family: system-ui, -apple-system, sans-serif;
-    background: var(--wf-bg);
-    color: var(--wf-dark);
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    color: var(--text);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
-  
-  /* Nav */
+
+  /* NAV */
   .nav {
-    background: var(--wf-white);
-    border-bottom: 2px solid var(--wf-border);
-    padding: 0.75rem 1rem;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-  .nav-logo { height: 32px; }
+  .nav-logo { height: 36px; }
   .nav-links {
     display: flex;
     gap: 0.25rem;
-    flex-wrap: wrap;
     list-style: none;
+    flex-wrap: wrap;
   }
   .nav-links a {
-    padding: 0.4rem 0.75rem;
-    border: 1.5px dashed var(--wf-border);
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--wf-dark);
-    font-size: 0.85rem;
-    font-weight: 500;
-  }
-  
-  /* Container */
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
-  
-  /* Sections */
-  .section {
-    background: var(--wf-white);
-    border: 2px solid var(--wf-border);
-    margin: 2rem 0;
-    padding: 2rem;
-  }
-  .section-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: var(--wf-dark);
-    border-bottom: 2px solid var(--wf-border);
-    padding-bottom: 0.5rem;
-  }
-  .section-subtitle {
-    font-size: 1rem;
-    color: var(--wf-mid);
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Hero */
-  .hero-banner {
-    background: var(--wf-white);
-    border: 2px solid var(--wf-accent);
-    text-align: center;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  .hero-banner h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: var(--wf-accent);
-  }
-  
-  /* Promo Card */
-  .promo-card {
-    background: #fafafa;
-    border: 2px dashed var(--wf-accent);
-    padding: 2rem;
-    text-align: center;
-  }
-  .promo-card h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
-  .promo-card p { color: var(--wf-mid); margin-bottom: 0.5rem; }
-  .promo-bullets {
-    list-style: none;
-    margin: 1rem 0;
-  }
-  .promo-bullets li {
-    padding: 0.35rem 0;
-    font-weight: 500;
-  }
-  .promo-bullets li::before { content: "✓ "; color: var(--wf-green); font-weight: 700; }
-  
-  /* Buttons */
-  .btn-group { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem; }
-  .btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    border: 2px solid var(--wf-border);
+    padding: 0.5rem 0.85rem;
     border-radius: 6px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .nav-links a:hover { background: var(--coway-light); color: var(--coway-navy); }
+  .nav-cta {
+    background: var(--coway-green);
+    color: white !important;
+    padding: 0.5rem 1.25rem !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+  }
+
+  /* CONTAINER */
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--coway-navy) 0%, #003d7c 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--coway-red);
+    color: white;
+    padding: 0.3rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; line-height: 1.3; }
+  .hero p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .hero-cta { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .hero-cta a {
+    padding: 0.85rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
     transition: all 0.2s;
   }
-  .btn-primary {
-    background: var(--wf-green);
+  .hero-cta .btn-wa {
+    background: var(--coway-green);
     color: white;
-    border-color: var(--wf-green);
   }
-  .btn-outline {
+  .hero-cta .btn-wa:hover { background: #008c4a; transform: translateY(-1px); }
+  .hero-cta .btn-call {
     background: white;
-    color: var(--wf-dark);
+    color: var(--coway-navy);
   }
-  
+  .hero-cta .btn-call:hover { background: #f0f0f0; }
+
+  /* PROMO STRIP */
+  .promo-strip {
+    background: var(--coway-light);
+    border-bottom: 3px solid var(--coway-blue);
+    padding: 1rem;
+    text-align: center;
+  }
+  .promo-strip p { color: var(--coway-navy); font-weight: 600; font-size: 0.95rem; }
+  .promo-strip p strong { color: var(--coway-red); }
+
+  /* SECTION */
+  .section {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .section-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  .section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--coway-navy);
+    margin-bottom: 0.25rem;
+  }
+  .section-desc { color: var(--text-light); font-size: 0.9rem; }
+
   /* Product Grid */
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.25rem;
   }
   .product-card {
-    border: 2px solid var(--wf-border);
-    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
     background: white;
-    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
   }
-  .product-card img {
-    width: 100%;
-    height: 180px;
+  .product-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+  }
+  .product-card .img-wrap {
+    background: #f0f4f8;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+  }
+  .product-card .img-wrap img {
+    height: 160px;
+    width: auto;
+    max-width: 100%;
     object-fit: contain;
-    background: #f0f0f0;
-    margin-bottom: 0.75rem;
   }
   .product-card .badge {
-    display: inline-block;
-    padding: 0.15rem 0.6rem;
-    border: 1px solid var(--wf-accent);
-    color: var(--wf-accent);
-    font-size: 0.7rem;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
   }
-  .product-card h4 { font-size: 1.05rem; margin-bottom: 0.25rem; }
-  .product-price { margin: 0.5rem 0; }
-  .product-price .new { font-size: 1.2rem; font-weight: 700; color: var(--wf-accent); }
-  .product-price .old { font-size: 0.85rem; color: var(--wf-light); text-decoration: line-through; }
+  .badge-popular { background: var(--coway-blue); color: white; }
+  .badge-terlaris { background: var(--coway-red); color: white; }
+  .badge-terbaru { background: var(--coway-green); color: white; }
+
+  .product-card .info { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+  .product-card .info h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--coway-navy); }
+  .product-price { margin-bottom: 0.5rem; }
+  .product-price .new-price { font-size: 1.15rem; font-weight: 800; color: var(--coway-red); }
+  .product-price .old-price { font-size: 0.8rem; color: #999; text-decoration: line-through; margin-left: 0.5rem; }
   .product-specs {
     list-style: none;
     font-size: 0.8rem;
-    color: var(--wf-mid);
-    margin: 0.75rem 0;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    flex: 1;
   }
-  .product-specs li::before { content: "• "; }
-  
-  /* Category section */
-  .cat-header {
+  .product-specs li { padding: 0.15rem 0; }
+  .product-specs li::before { content: "• "; color: var(--coway-blue); }
+
+  .card-btns {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  .cat-header img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border: 2px solid var(--wf-border);
-  }
-  
-  /* About / Trust */
-  .stats-row {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
-    margin: 1.5rem 0;
   }
-  .stat-box {
+  .card-btns a {
+    flex: 1;
+    min-width: 80px;
     text-align: center;
-    padding: 1rem 1.5rem;
-    border: 2px dashed var(--wf-border);
+    padding: 0.55rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s;
   }
-  .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--wf-accent); }
-  .stat-box .label { font-size: 0.85rem; color: var(--wf-mid); }
-  
+  .btn-card-wa { background: var(--coway-green); color: white; }
+  .btn-card-wa:hover { background: #008c4a; }
+  .btn-card-info { background: white; color: var(--coway-blue); border: 1.5px solid var(--coway-blue); }
+  .btn-card-info:hover { background: var(--coway-light); }
+
+  /* TRUST SECTION */
   .trust-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     margin: 1.5rem 0;
   }
   .trust-item {
-    border: 2px solid var(--wf-border);
-    padding: 1.5rem;
     text-align: center;
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
   }
-  .trust-item h4 { font-size: 0.95rem; margin-bottom: 0.35rem; }
-  .trust-item p { font-size: 0.8rem; color: var(--wf-mid); }
-  
-  /* Form */
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
+  .trust-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .trust-item h4 { font-size: 0.95rem; font-weight: 700; color: var(--coway-navy); margin-bottom: 0.35rem; }
+  .trust-item p { font-size: 0.8rem; color: var(--text-light); }
+
+  /* ABOUT AGENT */
+  .agent-card {
+    text-align: center;
+    padding: 2rem;
   }
-  .form-grid input,
-  .form-grid select {
-    padding: 0.7rem;
-    border: 2px solid var(--wf-border);
-    font-size: 0.9rem;
+  .agent-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--coway-blue);
+    margin-bottom: 1rem;
+  }
+  .agent-card h3 { color: var(--coway-navy); font-size: 1.2rem; }
+  .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+  }
+  .stat-box {
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+  .stat-box .num { font-size: 2rem; font-weight: 800; color: var(--coway-blue); }
+  .stat-box .label { font-size: 0.85rem; color: var(--text-light); font-weight: 500; }
+
+  /* FORM */
+  .form-section { max-width: 540px; margin: 0 auto; }
+  .form-group { margin-bottom: 1rem; }
+  .form-group input,
+  .form-group select {
     width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
     background: white;
   }
-  .form-grid select {
-    grid-column: span 2;
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--coway-blue);
+    box-shadow: 0 0 0 3px rgba(0,102,179,0.1);
   }
-  .form-grid .btn { grid-column: span 2; cursor: pointer; }
-  
-  /* Footer */
+  .btn-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: var(--coway-blue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-submit:hover { background: var(--coway-navy); }
+
+  /* FOOTER */
   .footer {
-    background: var(--wf-white);
-    border-top: 2px solid var(--wf-border);
-    padding: 2rem 1rem;
+    background: var(--coway-navy);
+    color: rgba(255,255,255,0.8);
+    padding: 2rem 1.5rem;
     text-align: center;
     margin-top: 2rem;
+    font-size: 0.85rem;
   }
-  .footer p { color: var(--wf-mid); font-size: 0.85rem; }
-  
-  /* Wireframe-specific touches */
-  .wf-label {
-    display: inline-block;
-    background: var(--wf-dark);
-    color: white;
-    font-size: 0.65rem;
-    padding: 0.15rem 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    .section { padding: 1.25rem; margin: 1rem 0; }
-    .product-grid { grid-template-columns: 1fr 1fr; }
-    .form-grid { grid-template-columns: 1fr; }
-    .form-grid select { grid-column: span 1; }
-    .form-grid .btn { grid-column: span 1; }
-    .nav-links { display: none; }
-  }
+  .footer p { margin: 0.25rem 0; }
 
-  /* Animations */
+  /* ANIMATIONS */
   .fade-up {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
     transition: opacity 1s cubic-bezier(0.22,1,0.36,1), transform 1s cubic-bezier(0.22,1,0.36,1);
   }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
+
   @media (prefers-reduced-motion: reduce) {
     .fade-up { transition: none; opacity: 1; transform: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero { padding: 2rem 1rem; }
+    .hero h1 { font-size: 1.4rem; }
+    .hero p { font-size: 0.95rem; }
+    .section { padding: 1.5rem 1rem; margin: 1rem 0; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .product-card .img-wrap { padding: 1rem; }
+    .product-card .img-wrap img { height: 120px; }
+    .product-card .info { padding: 0.85rem; }
+    .product-card .info h4 { font-size: 0.85rem; }
+    .product-price .new-price { font-size: 0.95rem; }
+    .product-specs { font-size: 0.7rem; }
+    .card-btns a { font-size: 0.7rem; padding: 0.45rem; }
+    .section-header img { width: 70px; height: 70px; }
+    .section-title { font-size: 1.1rem; }
+  }
+  @media (max-width: 400px) {
+    .product-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .product-card .img-wrap img { height: 100px; }
   }
 </style>
 </head>
 <body>
 
-<!-- HERO BANNER -->
-<div class="hero-banner">
-  <span class="wf-label">Banner</span>
-  <h2>Promosi 20 Tahun Coway — RM20 untuk semua penapis air Coway untuk 7 bulan!</h2>
+<!-- NAV -->
+<nav class="nav">
+  <img src="images/coway-logo.png" alt="Coway" class="nav-logo" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2024/09/coway-white-logo.png'">
+  <ul class="nav-links">
+    <li><a href="#penapis-air">Penapis Air</a></li>
+    <li><a href="#penapis-udara">Penapis Udara</a></li>
+    <li><a href="#aircond">Aircond</a></li>
+    <li><a href="#peti-sejuk">Peti Sejuk</a></li>
+    <li><a href="#washer">Washer Dryer</a></li>
+    <li><a href="#berex">BEREX</a></li>
+    <li><a href="#contact" class="nav-cta">Hubungi</a></li>
+  </ul>
+</nav>
+
+<!-- PROMO STRIP -->
+<div class="promo-strip">
+  <p>🎉 <strong>Promosi 20 Tahun Coway</strong> — RM20 untuk semua penapis air Coway untuk 7 bulan!</p>
 </div>
 
-<!-- MAIN PROMO -->
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-badge">Promosi Terhad</span>
+  <h1>Penapis Air Coway Hanya RM20 untuk 7 Bulan!</h1>
+  <p>Tebus promosi Coway terbaru! Sempena 20 tahun Coway, dapatkan penapis air Coway hanya RM20/sebulan untuk 12 bulan pertama.</p>
+  <ul style="list-style:none;margin-bottom:1.5rem;font-weight:500">
+    <li>✅ Daftar Percuma, Tanpa Deposit</li>
+    <li>✅ Promosi RM20/sebulan!</li>
+    <li>✅ Hadiah Percuma Setiap Pendaftaran</li>
+  </ul>
+  <div class="hero-cta">
+    <a href="https://wa.me/60183721927?text=Hai%20Kak%20Ina!%20Nak%20tanya%20pasal%20promosi%20Coway." class="btn-wa" target="_blank">💬 WhatsApp Sekarang</a>
+    <a href="tel:+60183721927" class="btn-call">📞 Hubungi</a>
+  </div>
+</section>
+
 <div class="container">
-  <div class="promo-card fade-up">
-    <h3>Penapis Air Coway Hanya RM20 untuk 7 Bulan!</h3>
-    <p>Tebus promosi Coway terbaru! Sempena 20 tahun Coway, dapatkan penapis air Coway hanya RM20/sebulan untuk 12 bulan pertama.</p>
-    <ul class="promo-bullets">
-      <li>Daftar Percuma, Tanpa Deposit.</li>
-      <li>Promosi RM20/sebulan!</li>
-      <li>Hadiah Percuma Setiap Pendaftaran.</li>
-    </ul>
-    <div class="btn-group">
-      <a href="#" class="btn btn-primary">📱 WhatsApp</a>
-      <a href="#" class="btn btn-outline">📞 Hubungi</a>
+
+<!-- PENAPIS AIR (Table Top) -->
+<div class="section fade-up" id="penapis-air">
+  <div class="section-header">
+    <img src="images/penapis-air.jpg" alt="Penapis Air" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2025/10/penapis-air-1.jpg'">
+    <div>
+      <h2 class="section-title">Penapis Air Coway</h2>
+      <p class="section-desc">Penapis air dijamin halal, menapis kekotoran dan kuman di dalam air minuman anda sekeluarga.</p>
     </div>
   </div>
 
-  <!-- SECTION: Penapis Air Table Top -->
-  <div class="section fade-up">
-    <div class="cat-header">
-      <img src="images/penapis-air.jpg" alt="Penapis Air">
-      <div>
-        <h3 class="section-title" style="border:none;margin:0">Penapis Air Coway</h3>
-        <p class="section-subtitle" style="margin:0">Penapis air dijamin halal, menapis kekotoran dan kuman di dalam air minuman anda sekeluarga.</p>
+  <h3 style="font-size:1rem;color:var(--text-light);margin-bottom:1rem">Atas Meja (Table Top)</h3>
+  <div class="product-grid">
+    <!-- Villaem 3 -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <span class="badge badge-popular">Popular</span>
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-villaem3-CHP-7320L.webp" alt="Villaem 3" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Villaem 3</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM74</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (2.7L)</li><li>Air Sejuk (2.6L)</li><li>Air biasa (6.1L)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Villaem%203." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
       </div>
     </div>
-    
-    <h4 style="margin:1rem 0;color:var(--wf-mid)">Penapis Air (Atas Meja @ Table Top)</h4>
-    <div class="product-grid">
-      <!-- Villaem 3 -->
-      <div class="product-card"><span class="badge">Popular</span><img src="images/poster-promo.jpg" alt="Villaem 3"><h4>Villaem 3</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM74/Sebulan</span></div><ul class="product-specs"><li>Air panas (2.7L)</li><li>Air Sejuk (2.6L)</li><li>Air biasa (6.1L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- NeoN -->
-      <div class="product-card"><span class="badge">Popular</span><img src="images/poster-promo.jpg" alt="NeoN"><h4>NeoN™</h4><div class="product-price"><span class="new">RM20/sebulan*</span><br><span class="old">RM54/sebulan</span></div><ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (1.5L)</li><li>Air biasa berterusan</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- Neo Plus -->
-      <div class="product-card"><span class="badge">Terlaris</span><img src="images/poster-promo.jpg" alt="Neo Plus"><h4>Neo Plus</h4><div class="product-price"><span class="new">RM20/sebulan*</span><br><span class="old">RM59/sebulan</span></div><ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (2.3L)</li><li>Air biasa (2.5L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- AIS -->
-      <div class="product-card"><span class="badge">Popular</span><img src="images/poster-promo.jpg" alt="AIS"><h4>AIS</h4><div class="product-price"><span class="new">RM20/sebulan*</span><br><span class="old">RM120/sebulan</span></div><ul class="product-specs"><li>Air panas (1.5L)</li><li>Air Sejuk (1.8L)</li><li>Air biasa (1.8L)</li><li>Ais (0.7kg)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-    
-    <div class="product-grid" style="margin-top:1.25rem">
-      <!-- Dazzie -->
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Dazzie"><h4>Dazzie™</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM79/Sebulan</span></div><ul class="product-specs"><li>Air panas Segera</li><li>Air Sejuk (1L)</li><li>Air biasa berterusan</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- Ombak -->
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Ombak"><h4>Ombak</h4><div class="product-price"><span class="new">RM20/sebulan*</span><br><span class="old">RM90/sebulan</span></div><ul class="product-specs"><li>Air panas (3.4L)</li><li>Air Sejuk (2.3L)</li><li>Air biasa (7.8L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- Glaze -->
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Glaze"><h4>Glaze</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM75/Sebulan</span></div><ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (2.5L)</li><li>Air biasa (2.5L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <!-- Cinnamon -->
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Cinnamon"><h4>Cinnamon</h4><div class="product-price"><span class="new">RM20/sebulan*</span><br><span class="old">RM32/sebulan</span></div><ul class="product-specs"><li>Air biasa (5L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-  </div>
-
-  <!-- SECTION: Penapis Air Standing -->
-  <div class="section fade-up">
-    <h4 style="margin-bottom:1rem;color:var(--wf-mid)">Penapis Air (Berdiri @ Standing)</h4>
-    <div class="product-grid">
-      <div class="product-card"><span class="badge">Terlaris</span><img src="images/poster-promo.jpg" alt="Core Plus"><h4>Core Plus</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM93/Sebulan</span></div><ul class="product-specs"><li>Air panas (3.6L)</li><li>Air Sejuk (7.1L)</li><li>Air biasa (3.6L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Lucy Plus"><h4>Lucy Plus</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM150/Sebulan</span></div><ul class="product-specs"><li>Air panas (1.5L)</li><li>Air Sejuk (2.5L)</li><li>Air biasa (3.5L)</li><li>Ais (1kg)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Harry"><h4>Harry</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM83/Sebulan</span></div><ul class="product-specs"><li>Air panas (3L)</li><li>Air Sejuk (3L)</li><li>Air biasa (6L)</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-  </div>
-
-  <!-- SECTION: Penapis Udara & Aircond -->
-  <div class="section fade-up">
-    <div class="cat-header">
-      <img src="images/penapis-udara.jpg" alt="Penapis Udara">
-      <div>
-        <h3 class="section-title" style="border:none;margin:0">Penapis Udara & Aircond Coway</h3>
-        <p class="section-subtitle" style="margin:0">Udara bersih dan bebas kuman dengan penapis udara Coway – Udara lebih sejuk & nyaman dengan aircond coway.</p>
+    <!-- NeoN -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <span class="badge badge-popular">Popular</span>
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-neon-300x300.jpg" alt="NeoN" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>NeoN™</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM54</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (1.5L)</li><li>Air biasa berterusan</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20NeoN." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
       </div>
     </div>
-    
-    <h4 style="margin:1rem 0;color:var(--wf-mid)">Penapis Udara Coway</h4>
-    <div class="product-grid">
-      <div class="product-card"><span class="badge">Terlaris</span><img src="images/poster-promo.jpg" alt="Storm 2"><h4>Storm 2</h4><div class="product-price"><span class="new">RM28/Sebulan*</span><br><span class="old">RM55/Sebulan</span></div><ul class="product-specs"><li>Pre-filter</li><li>Fine Dust Filter</li><li>Double Deodorisation Filter</li><li>HEPA Filter</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Noble"><h4>Noble</h4><div class="product-price"><span class="new">RM48/Sebulan*</span><br><span class="old">RM95/Sebulan</span></div><ul class="product-specs"><li>Pre-filter</li><li>Non woven Filter</li><li>Antimicrobial Filter</li><li>Deodorisation Filter</li><li>HEPA Filter</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Lombok 3"><h4>Lombok 3</h4><div class="product-price"><span class="new">RM33/Sebulan*</span><br><span class="old">RM65/Sebulan</span></div><ul class="product-specs"><li>Pre-filter</li><li>Fine Dust Filter</li><li>Deodorisation Filter</li><li>HEPA Filter</li><li>RBD Plasma Filter</li><li>Catalyst Filter</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="Tuba"><h4>Tuba</h4><div class="product-price"><span class="new">RM48/Sebulan*</span><br><span class="old">RM95/Sebulan</span></div><ul class="product-specs"><li>4D Pre-filter</li><li>Smoke Filter</li><li>Allergen Filter</li><li>4D Double HEPA Filter</li><li>Double Deodorisation Filter</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-
-    <h4 style="margin:1.5rem 0 1rem;color:var(--wf-mid)">Penyaman Udara @ Aircond Coway</h4>
-    <div class="product-grid">
-      <div class="product-card"><img src="images/poster-promo.jpg" alt="F-Series"><h4>F-Series Aircond</h4><div class="product-price"><span class="new">Dari RM70/sebulan</span><br><span class="old">RM80/sebulan</span></div><ul class="product-specs"><li>Pilihan 1.0HP & 1.5HP</li><li>Inverter Jimat Eletrik</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><span class="badge">Terbaru</span><img src="images/poster-promo.jpg" alt="P-Series"><h4>P-Series Aircond</h4><div class="product-price"><span class="new">Dari RM80/sebulan</span><br><span class="old">RM90/sebulan</span></div><ul class="product-specs"><li>Pilihan 1.5HP & 2.0HP</li><li>Inverter Jimat Eletrik</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-  </div>
-
-  <!-- SECTION: Peti Sejuk -->
-  <div class="section fade-up">
-    <h3 class="section-title">Peti Sejuk — 2 & 4 Pintu 715L</h3>
-    <p class="section-subtitle">Bahan mentah segar, sejuk, tahan lebih lama & jimat eletrik.</p>
-    <div class="product-grid">
-      <div class="product-card"><span class="badge">Terbaru</span><img src="images/poster-promo.jpg" alt="4 Pintu 551L"><h4>Peti Sejuk — 4 Pintu — 551L</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM94/Sebulan</span></div><ul class="product-specs"><li>4 pintu</li><li>Mode boleh ubah</li><li>Kekal segar</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><span class="badge">Terbaru</span><img src="images/poster-promo.jpg" alt="2 Pintu 715L"><h4>Peti Sejuk — 2 Pintu — 715L</h4><div class="product-price"><span class="new">RM20/Sebulan*</span><br><span class="old">RM79/Sebulan</span></div><ul class="product-specs"><li>2 pintu</li><li>Mode boleh ubah</li><li>Kekal segar</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-  </div>
-
-  <!-- SECTION: Washer Dryer -->
-  <div class="section fade-up">
-    <div class="cat-header">
-      <img src="images/washer-dryer.jpg" alt="Washer Dryer">
-      <div>
-        <h3 class="section-title" style="border:none;margin:0">Washer Dryer — Cucian & Kering 15 Minit!</h3>
-        <p class="section-subtitle" style="margin:0">Basuh baju lebih mudah dan pantas dengan Coway Washer Dryer.</p>
+    <!-- Neo Plus -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <span class="badge badge-terlaris">Terlaris</span>
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-neo-plus-300x300.jpg" alt="Neo Plus" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Neo Plus</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM59</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (2.3L)</li><li>Air biasa (2.5L)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Neo%20Plus." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
       </div>
     </div>
-    <div class="product-grid">
-      <div class="product-card"><span class="badge">Terbaru</span><img src="images/poster-promo.jpg" alt="Washery Dryer"><h4>Washery Dryer</h4><div class="product-price"><span class="new">RM47/Sebulan*</span><br><span class="old">RM94/Sebulan</span></div><ul class="product-specs"><li>Cucian pantas 15 minit</li><li>10kg basuhan</li><li>6kg kering</li><li>Inverter motor jimat eletrik</li><li>5 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-  </div>
-
-  <!-- SECTION: BEREX -->
-  <div class="section fade-up">
-    <div class="cat-header">
-      <img src="images/berex.jpg" alt="BEREX">
-      <div>
-        <h3 class="section-title" style="border:none;margin:0">Rehat Dengan BEREX</h3>
-        <p class="section-subtitle" style="margin:0">Badan segar, sihat & tidur lebih lena dengan BEREX.</p>
+    <!-- AIS -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <span class="badge badge-popular">Popular</span>
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-ais-300x300.jpg" alt="AIS" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>AIS</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM120</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (1.5L)</li><li>Air Sejuk (1.8L)</li><li>Air biasa (1.8L)</li><li>Ais (0.7kg)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20AIS." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
       </div>
     </div>
-    <div class="product-grid">
-      <div class="product-card"><h4>Mine</h4><div class="product-price"><span class="new">RM105/sebulan</span></div><ul class="product-specs"><li>Zero gravity</li><li>12 program urutan</li><li>Sensor imbasan badan</li><li>Pengurut kaki & beg udara</li><li>Servis & Waranti 5 Tahun</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><h4>Pebble</h4><div class="product-price"><span class="new">RM130/sebulan</span></div><ul class="product-specs"><li>3D massage roller</li><li>11 program urutan</li><li>Imbasan badan</li><li>2 pemanas lembut</li><li>SL Track</li><li>Servis & Waranti 5 Tahun</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><h4>Katil Urut</h4><div class="product-price"><span class="new">RM235/sebulan</span></div><ul class="product-specs"><li>Urutan berbaring</li><li>Imbasan badan</li><li>Roller blade pemanas</li><li>Tukar menjadi tempat duduk</li><li>Servis & Waranti 5 Tahun</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><h4>Kerusi Urut Coway</h4><div class="product-price"><span class="new">RM125/sebulan</span></div><ul class="product-specs"><li>Zero gravity</li><li>12 program urutan</li><li>Sensor imbasan badan</li><li>Pengurut kaki & beg udara</li><li>Servis & Waranti 5 Tahun</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
-    
-    <h4 style="margin:1.5rem 0 1rem;color:var(--wf-mid)">Tilam Premium Coway</h4>
-    <div class="product-grid">
-      <div class="product-card"><h4>Tilam Prime 2</h4><div class="product-price"><span class="new">Dari RM79/sebulan</span></div><ul class="product-specs"><li>Tukar top percuma</li><li>7-zon spring poket</li><li>Kekal sejuk</li><li>Tilam premium</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-      <div class="product-card"><h4>Tilam Prime Lite</h4><div class="product-price"><span class="new">Dari RM49/sebulan</span></div><ul class="product-specs"><li>Tukar top percuma</li><li>5-zon spring poket</li><li>Kekal sejuk</li><li>Tilam premium</li><li>7 tahun servis percuma</li></ul><div class="btn-group"><a href="#" class="btn btn-primary" style="font-size:0.8rem">WhatsApp</a><a href="#" class="btn btn-outline" style="font-size:0.8rem">Maklumat Lanjut</a></div></div>
-    </div>
   </div>
 
-  <!-- SECTION: About Agent / Kak Ina -->
-  <div class="section fade-up" style="text-align:center">
-    <img src="images/coway-asset.jpg" alt="Kak Ina" style="width:100px;height:100px;border-radius:50%;border:3px solid var(--wf-border);margin-bottom:1rem">
-    <h3>Hi, saya Kak Ina (634872)</h3>
-    <p style="color:var(--wf-mid)">Ejen rasmi Coway anda. Membantu menguruskan pendaftaran produk Coway anda seluruh Malaysia.</p>
-    
-    <div class="stats-row">
-      <div class="stat-box"><div class="num">7+</div><div class="label">Tahun Pengalaman</div></div>
-      <div class="stat-box"><div class="num">1170+</div><div class="label">Pelanggan</div></div>
+  <div class="product-grid" style="margin-top:1.25rem">
+    <!-- Dazzie -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-dazzie-300x300.jpg" alt="Dazzie" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Dazzie™</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM79</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas Segera</li><li>Air Sejuk (1L)</li><li>Air biasa berterusan</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Dazzie." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
+      </div>
     </div>
-    
-    <p style="font-weight:600;margin-top:1rem">Anda mencari produk Coway terbaru? Jom saya bantu.</p>
-    <ul class="promo-bullets" style="text-align:left;max-width:400px;margin:0.5rem auto">
-      <li>Bantu hingga selesai.</li>
-      <li>Support after sale.</li>
-      <li>Pelbagai freegift percuma!</li>
-    </ul>
-    <div class="btn-group">
-      <a href="#" class="btn btn-primary">📱 WhatsApp</a>
-      <a href="#" class="btn btn-outline">📞 Hubungi</a>
+    <!-- Ombak -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-ombak-300x300.jpg" alt="Ombak" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Ombak</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM90</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (3.4L)</li><li>Air Sejuk (2.3L)</li><li>Air biasa (7.8L)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Ombak." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
+      </div>
     </div>
-  </div>
-
-  <!-- SECTION: Promosi Mix & Match -->
-  <div class="section fade-up" style="text-align:center">
-    <h3 class="section-title" style="border:none">Promosi Coway Mix & Match!</h3>
-    <p style="color:var(--wf-mid);max-width:500px;margin:0 auto">Nak lebih jimat & berbaloi? Ambil promosi Mix & Match! Dua produk dengan harga lebih murah! WhatsApp saya untuk pertanyaan.</p>
-    <div class="btn-group" style="margin-top:1rem">
-      <a href="#" class="btn btn-primary">Promosi Mix & Match</a>
+    <!-- Glaze -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-glaze-300x300.jpg" alt="Glaze" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Glaze</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM75</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air panas (1L)</li><li>Air Sejuk (2.5L)</li><li>Air biasa (2.5L)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Glaze." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
+      </div>
     </div>
-  </div>
-
-  <!-- SECTION: Trust -->
-  <div class="section fade-up" style="text-align:center">
-    <h3 class="section-title" style="border:none">Coway Dipercayai Lebih 3 Juta Rakyat Malaysia</h3>
-    <p class="section-subtitle">Coway merupakan produk yang dijamin halal & selamat untuk kegunaan rakyat Malaysia.</p>
-    <div class="trust-grid">
-      <div class="trust-item"><h4>🔧 Servis Percuma</h4><p>Servis akan dilakukan sekerap 2 bulan sekali.</p></div>
-      <div class="trust-item"><h4>🛡️ Perlindungan Waranti</h4><p>Sekiranya berlaku kerosakkan, gantian alat ganti PERCUMA!</p></div>
-      <div class="trust-item"><h4>🏠 100% Milik Anda</h4><p>Melalui pembayaran bulanan, produk coway adalah 100% milik anda.</p></div>
-      <div class="trust-item"><h4>💰 Harga Berpatutan</h4><p>Produk Coway dari serendah RM16 sebulan.</p></div>
-    </div>
-  </div>
-
-  <!-- SECTION: Contact Form -->
-  <div class="section fade-up" style="text-align:center">
-    <h3 class="section-title" style="border:none">Naik Taraf Rumah Anda Dengan Produk Coway Hari Ini</h3>
-    <p class="section-subtitle">Isi borang dibawah dan saya akan berhubung dengan anda secepat mungkin.</p>
-    <div class="form-grid">
-      <input type="text" placeholder="Nama">
-      <input type="tel" placeholder="No. Telefon">
-      <select>
-        <option>Kategori Produk</option>
-        <option>Penapis Air</option>
-        <option>Penapis Udara</option>
-        <option>Berex</option>
-        <option>Aircond</option>
-        <option>Washer Dryer</option>
-        <option>Penapis Air Luar</option>
-      </select>
-      <button class="btn btn-primary">Hantar</button>
-    </div>
-  </div>
-
-  <!-- SECTION: Product Categories -->
-  <div class="section fade-up" style="text-align:center">
-    <h3 class="section-title" style="border:none">Kategori Produk Coway</h3>
-    <div class="trust-grid">
-      <div class="trust-item"><strong>Penapis Air</strong></div>
-      <div class="trust-item"><strong>Penapis Udara</strong></div>
-      <div class="trust-item"><strong>Berex</strong></div>
-      <div class="trust-item"><strong>Penapis Air Luar</strong></div>
-      <div class="trust-item"><strong>Aircond</strong></div>
-      <div class="trust-item"><strong>Washer Dryer</strong></div>
+    <!-- Cinnamon -->
+    <div class="product-card">
+      <div class="img-wrap">
+        <img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-cinnamon-300x300.jpg" alt="Cinnamon" onerror="this.src='images/poster-promo.jpg'">
+      </div>
+      <div class="info">
+        <h4>Cinnamon</h4>
+        <div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM32</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div>
+        <ul class="product-specs"><li>Air biasa (5L)</li><li>7 tahun servis percuma</li></ul>
+        <div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Cinnamon." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- PENAPIS AIR (Standing) -->
+<div class="section fade-up">
+  <h3 style="font-size:1rem;color:var(--text-light);margin-bottom:1rem">Berdiri (Standing)</h3>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="img-wrap"><span class="badge badge-terlaris">Terlaris</span><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-core-plus-300x300.jpg" alt="Core Plus" onerror="this.src='images/poster-promo.jpg'"></div>
+      <div class="info"><h4>Core Plus</h4><div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM93</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Air panas (3.6L)</li><li>Air Sejuk (7.1L)</li><li>Air biasa (3.6L)</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Core%20Plus." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div>
+    </div>
+    <div class="product-card">
+      <div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-lucy-plus-300x300.jpg" alt="Lucy Plus" onerror="this.src='images/poster-promo.jpg'"></div>
+      <div class="info"><h4>Lucy Plus</h4><div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM150</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Air panas (1.5L)</li><li>Air Sejuk (2.5L)</li><li>Air biasa (3.5L)</li><li>Ais (1kg)</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Lucy%20Plus." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div>
+    </div>
+    <div class="product-card">
+      <div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-harry-300x300.jpg" alt="Harry" onerror="this.src='images/poster-promo.jpg'"></div>
+      <div class="info"><h4>Harry</h4><div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM83</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Air panas (3L)</li><li>Air Sejuk (3L)</li><li>Air biasa (6L)</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Harry." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- PENAPIS UDARA & AIRCOND -->
+<div class="section fade-up" id="penapis-udara">
+  <div class="section-header">
+    <img src="images/penapis-udara.jpg" alt="Penapis Udara" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2025/10/penapis-udara-1.jpg'">
+    <div>
+      <h2 class="section-title">Penapis Udara & Aircond Coway</h2>
+      <p class="section-desc">Udara bersih dan bebas kuman dengan penapis udara Coway – lebih sejuk & nyaman dengan Aircond Coway.</p>
+    </div>
+  </div>
+  <h3 style="font-size:1rem;color:var(--text-light);margin-bottom:1rem">Penapis Udara</h3>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><span class="badge badge-terlaris">Terlaris</span><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-storm-2-300x300.jpg" alt="Storm 2" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Storm 2</h4><div class="product-price"><span class="new-price">RM28</span><span class="old-price">RM55</span></div><ul class="product-specs"><li>Pre-filter</li><li>Fine Dust Filter</li><li>HEPA Filter</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Storm%202." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-noble-300x300.jpg" alt="Noble" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Noble</h4><div class="product-price"><span class="new-price">RM48</span><span class="old-price">RM95</span></div><ul class="product-specs"><li>Pre-filter</li><li>Antimicrobial Filter</li><li>HEPA Filter</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Noble." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-lombok-3-300x300.jpg" alt="Lombok 3" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Lombok 3</h4><div class="product-price"><span class="new-price">RM33</span><span class="old-price">RM65</span></div><ul class="product-specs"><li>Pre-filter</li><li>Deodorisation Filter</li><li>HEPA + RBD Plasma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Lombok%203." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-tuba-300x300.jpg" alt="Tuba" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Tuba</h4><div class="product-price"><span class="new-price">RM48</span><span class="old-price">RM95</span></div><ul class="product-specs"><li>4D Pre-filter</li><li>Allergen Filter</li><li>4D Double HEPA</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Tuba." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+
+  <h3 style="font-size:1rem;color:var(--text-light);margin:1.5rem 0 1rem" id="aircond">Penyaman Udara (Aircond)</h3>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-f-series-300x300.jpg" alt="F-Series" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>F-Series Aircond</h4><div class="product-price"><span class="new-price">RM70</span><span class="old-price">RM80</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>1.0HP & 1.5HP</li><li>Inverter Jimat Elektrik</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20F-Series%20Aircond." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><span class="badge badge-terbaru">Terbaru</span><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-p-series-300x300.jpg" alt="P-Series" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>P-Series Aircond</h4><div class="product-price"><span class="new-price">RM80</span><span class="old-price">RM90</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>1.5HP & 2.0HP</li><li>Inverter Jimat Elektrik</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20P-Series%20Aircond." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+</div>
+
+<!-- PETI SEJUK -->
+<div class="section fade-up" id="peti-sejuk">
+  <h2 class="section-title">Peti Sejuk</h2>
+  <p class="section-desc" style="margin-bottom:1.5rem">Bahan mentah segar, sejuk, tahan lebih lama & jimat elektrik.</p>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><span class="badge badge-terbaru">Terbaru</span><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-fridge-4door-300x300.jpg" alt="4 Pintu" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>4 Pintu — 551L</h4><div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM94</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>4 pintu</li><li>Mode boleh ubah</li><li>Kekal segar</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Peti%20Sejuk%204%20Pintu." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><span class="badge badge-terbaru">Terbaru</span><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-fridge-2door-300x300.jpg" alt="2 Pintu" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>2 Pintu — 715L</h4><div class="product-price"><span class="new-price">RM20</span><span class="old-price">RM79</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>2 pintu</li><li>Mode boleh ubah</li><li>Kekal segar</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Peti%20Sejuk%202%20Pintu." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+</div>
+
+<!-- WASHER DRYER -->
+<div class="section fade-up" id="washer">
+  <div class="section-header">
+    <img src="images/washer-dryer.jpg" alt="Washer Dryer" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2025/10/washer-dryer-1.jpg'">
+    <div>
+      <h2 class="section-title">Washer Dryer — Cucian & Kering 15 Minit!</h2>
+      <p class="section-desc">Basuh baju lebih mudah dan pantas dengan Coway Washer Dryer.</p>
+    </div>
+  </div>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><span class="badge badge-terbaru">Terbaru</span><img src="https://cowaypromo.com/wp-content/uploads/2025/08/coway-washer-dryer-CWD10.jpg" alt="Washery Dryer" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Washery Dryer</h4><div class="product-price"><span class="new-price">RM47</span><span class="old-price">RM94</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Cucian pantas 15 minit</li><li>10kg basuhan / 6kg kering</li><li>Inverter motor jimat elektrik</li><li>5 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Washer%20Dryer." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+</div>
+
+<!-- BEREX -->
+<div class="section fade-up" id="berex">
+  <div class="section-header">
+    <img src="images/berex.jpg" alt="BEREX" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2025/10/berex-1.jpg'">
+    <div>
+      <h2 class="section-title">Rehat Dengan BEREX</h2>
+      <p class="section-desc">Badan segar, sihat & tidur lebih lena dengan BEREX.</p>
+    </div>
+  </div>
+  <h3 style="font-size:1rem;color:var(--text-light);margin-bottom:1rem">Kerusi & Katil Urut</h3>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-mine-300x300.jpg" alt="Mine" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Mine</h4><div class="product-price"><span class="new-price">RM105</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Zero gravity</li><li>12 program urutan</li><li>Sensor imbasan badan</li><li>Servis & Waranti 5 Tahun</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Mine." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-pebble-300x300.jpg" alt="Pebble" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Pebble</h4><div class="product-price"><span class="new-price">RM130</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>3D massage roller</li><li>11 program urutan</li><li>2 pemanas lembut</li><li>Servis & Waranti 5 Tahun</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Pebble." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-massage-bed-300x300.jpg" alt="Katil Urut" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Katil Urut</h4><div class="product-price"><span class="new-price">RM235</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Urutan berbaring</li><li>Roller blade pemanas</li><li>Boleh tukar ke tempat duduk</li><li>Servis & Waranti 5 Tahun</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Katil%20Urut." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+
+  <h3 style="font-size:1rem;color:var(--text-light);margin:1.5rem 0 1rem">Tilam Premium</h3>
+  <div class="product-grid">
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-prime-2-300x300.jpg" alt="Prime 2" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Tilam Prime 2</h4><div class="product-price"><span class="new-price">RM79</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Tukar top percuma</li><li>7-zon spring poket</li><li>Kekal sejuk</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Tilam%20Prime%202." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+    <div class="product-card"><div class="img-wrap"><img src="https://cowaypromo.com/wp-content/uploads/2025/04/coway-prime-lite-300x300.jpg" alt="Prime Lite" onerror="this.src='images/poster-promo.jpg'"></div><div class="info"><h4>Tilam Prime Lite</h4><div class="product-price"><span class="new-price">RM49</span><span style="font-size:0.75rem;color:var(--text-light)">/bulan</span></div><ul class="product-specs"><li>Tukar top percuma</li><li>5-zon spring poket</li><li>Kekal sejuk</li><li>7 tahun servis percuma</li></ul><div class="card-btns"><a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20Tilam%20Prime%20Lite." class="btn-card-wa" target="_blank">WhatsApp</a><a href="#" class="btn-card-info">Info</a></div></div></div>
+  </div>
+</div>
+
+<!-- ABOUT AGENT -->
+<div class="section fade-up agent-card">
+  <img src="images/coway-asset.jpg" alt="Kak Ina" onerror="this.src='https://cowaypromo.com/wp-content/uploads/2026/06/coway-asset.jpg'">
+  <h3>Hi, saya Kak Ina (634872)</h3>
+  <p style="color:var(--text-light);margin-bottom:1rem">Ejen rasmi Coway anda. Membantu menguruskan pendaftaran produk Coway anda seluruh Malaysia.</p>
+  <div class="stats-row">
+    <div class="stat-box"><div class="num">7+</div><div class="label">Tahun Pengalaman</div></div>
+    <div class="stat-box"><div class="num">1170+</div><div class="label">Pelanggan</div></div>
+  </div>
+  <p style="font-weight:600;margin:0.5rem 0">Anda mencari produk Coway terbaru? Jom saya bantu.</p>
+  <p style="color:var(--text-light);font-size:0.9rem">Bantu hingga selesai • Support after sale • Pelbagai freegift percuma!</p>
+  <div class="hero-cta" style="margin-top:1rem">
+    <a href="https://wa.me/60183721927?text=Hai%20Kak%20Ina!%20Nak%20tanya%20pasal%20Coway." class="btn-wa" target="_blank">💬 WhatsApp</a>
+    <a href="tel:+60183721927" class="btn-call">📞 Hubungi</a>
+  </div>
+</div>
+
+<!-- MIX & MATCH -->
+<div class="section fade-up" style="text-align:center">
+  <h2 class="section-title" style="margin-bottom:0.75rem">Promosi Coway Mix & Match!</h2>
+  <p style="color:var(--text-light);max-width:500px;margin:0 auto 1rem">Nak lebih jimat & berbaloi? Ambil promosi Mix & Match! Dua produk dengan harga lebih murah!</p>
+  <a href="https://wa.me/60183721927?text=Hai!%20Nak%20tanya%20pasal%20promosi%20Mix%20%26%20Match." class="btn-wa" style="display:inline-block;padding:0.85rem 2.5rem;border-radius:50px;font-weight:700;text-decoration:none;font-size:0.95rem;background:var(--coway-green);color:white" target="_blank">Promosi Mix & Match</a>
+</div>
+
+<!-- TRUST -->
+<div class="section fade-up" style="text-align:center">
+  <h2 class="section-title" style="margin-bottom:0.5rem">Coway Dipercayai Lebih 3 Juta Rakyat Malaysia</h2>
+  <p class="section-desc">Produk yang dijamin halal & selamat untuk kegunaan rakyat Malaysia.</p>
+  <div class="trust-grid">
+    <div class="trust-item"><div class="trust-icon">🔧</div><h4>Servis Percuma</h4><p>Servis dilakukan sekerap 2 bulan sekali.</p></div>
+    <div class="trust-item"><div class="trust-icon">🛡️</div><h4>Perlindungan Waranti</h4><p>Gantian alat ganti PERCUMA jika berlaku kerosakan.</p></div>
+    <div class="trust-item"><div class="trust-icon">🏠</div><h4>100% Milik Anda</h4><p>Produk Coway adalah 100% milik anda melalui bayaran bulanan.</p></div>
+    <div class="trust-item"><div class="trust-icon">💰</div><h4>Harga Berpatutan</h4><p>Produk Coway dari serendah RM16 sebulan.</p></div>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="section fade-up" id="contact" style="text-align:center">
+  <h2 class="section-title">Naik Taraf Rumah Anda Dengan Produk Coway Hari Ini</h2>
+  <p class="section-desc" style="margin-bottom:1.5rem">Isi borang dibawah dan saya akan berhubung dengan anda secepat mungkin.</p>
+  <div class="form-section">
+    <div class="form-group"><input type="text" placeholder="Nama"></div>
+    <div class="form-group"><input type="tel" placeholder="No. Telefon"></div>
+    <div class="form-group"><input type="email" placeholder="Email"></div>
+    <div class="form-group">
+      <select>
+        <option value="">Kategori Produk</option>
+        <option>Penapis Air</option><option>Penapis Udara</option><option>Aircond</option>
+        <option>Washer Dryer</option><option>Peti Sejuk</option><option>BEREX</option>
+        <option>Tilam</option><option>Penapis Air Luar</option>
+      </select>
+    </div>
+    <button class="btn-submit">Hantar</button>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="section fade-up" style="text-align:center">
+  <h2 class="section-title" style="margin-bottom:1rem">Kategori Produk Coway</h2>
+  <div class="trust-grid">
+    <div class="trust-item" style="font-weight:600">Penapis Air</div>
+    <div class="trust-item" style="font-weight:600">Penapis Udara</div>
+    <div class="trust-item" style="font-weight:600">Aircond</div>
+    <div class="trust-item" style="font-weight:600">Washer Dryer</div>
+    <div class="trust-item" style="font-weight:600">Peti Sejuk</div>
+    <div class="trust-item" style="font-weight:600">BEREX</div>
+  </div>
+</div>
+
+</div><!-- /container -->
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>Level 20, Menara Ilham Baru, No. 8, Jalan Binjai, Kuala Lumpur, 50450 Kuala Lumpur, Malaysia.</p>
+  <p>Level 20, Menara Ilham Baru, No. 8, Jalan Binjai, Kuala Lumpur, 50450</p>
   <p>📞 +6018 3721 927 | ✉️ admin@cowaypromo.com</p>
-  <p style="margin-top:1rem;color:var(--wf-light)">Laman sesawang ini adalah milik sepenuhnya cowaypromo.com. Saya merupakan Health Planner Coway berdaftar.</p>
+  <p style="margin-top:1rem;opacity:0.6">© cowaypromo.com — Health Planner Coway Berdaftar (634872)</p>
 </footer>
 
-<!-- Image fallback (for local preview, use data from original site) -->
 <script>
 // Fade-up animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
+    if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
-
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// Image fallback: if local image not found, load from cowaypromo.com
+// Image fallback: if CDN image fails, load local fallback
 document.querySelectorAll('img').forEach(img => {
   img.onerror = function() {
-    const src = this.getAttribute('src');
-    if (src && src.startsWith('images/')) {
-      const filename = src.replace('images/', '');
-      const fallbackMap = {
-        'coway-logo.png': 'https://cowaypromo.com/wp-content/uploads/2024/09/coway-white-logo.png',
-        'poster-promo.jpg': 'https://cowaypromo.com/wp-content/uploads/2026/03/poster-promo-coway.jpg',
-        'penapis-air.jpg': 'https://cowaypromo.com/wp-content/uploads/2025/10/penapis-air-1.jpg',
-        'penapis-udara.jpg': 'https://cowaypromo.com/wp-content/uploads/2025/10/penapis-udara-1.jpg',
-        'washer-dryer.jpg': 'https://cowaypromo.com/wp-content/uploads/2025/10/washer-dryer-1.jpg',
-        'berex.jpg': 'https://cowaypromo.com/wp-content/uploads/2025/10/berex-1.jpg',
-        'coway-asset.jpg': 'https://cowaypromo.com/wp-content/uploads/2026/06/coway-asset.jpg',
-      };
-      if (fallbackMap[filename]) {
-        this.src = fallbackMap[filename];
-      }
+    if (this.src.includes('cowaypromo.com')) {
+      this.src = 'images/poster-promo.jpg';
     }
   };
-  // Immediately trigger error if file doesn't exist
-  if (img.complete && img.naturalWidth === 0) {
-    img.onerror();
-  }
 });
 </script>
-
 </body>
 </html>
